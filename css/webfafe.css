@@ -27,11 +27,95 @@ body{
   font-size: 1.4rem;
   background: #fff;
   color: #181818;
+/* 공통 스타일 */
+
+*, *::before, *::after{
+  box-sizing: border-box
+/* 모바일 레이아웃 */
+@media screen and (min-width: 320px) and (max-width: 999px){
+  .header{
+    background: #38302e;
+    color:#fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .logo, .member, .search-form{
+    width: 100%;
+  }
+  /* 모바일 로고 */
+  .logo{
+    background: yellow;;
+  }
+  /* 모바일 멤버링크 */
+  .member{
+    background: #988574;
+    order: -1;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2px 0;
+  }
+  .member a{
+    display: block;
+    padding: 5px 0;
+    margin: 0 1em;
+  }
+  /* 모바일 검색 폼 */
+  
 }
 /* 데스크탑 레이아웃 */
 @media screen and (min-with: 1000px){
   .header {
     background: yellow;
-    with: 1000px
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+  } 
+  /* 데스크탑 로고 */
+  .logo{
+    background: blue;
+    position: absolute;
+    top: 50pc;
+    left: 15px;
+  }
+  .logo img{
+    vertical-align: top;
+  }
+  /* 데스크탑 멤버링크 */
+  .member{
+    background: pink;
+    font-size: 0;
+    text-align: right;
+  }
+  .member li{
+    background: aqua;
+    display: inline;
+    font-size: 1.4rem;
+    padding: 0 20px;
+  }
+  .member li:nth-child(n+2)::before{
+    content: '|';
+    background: orange;
+  }
+  .member a{
+    display: inline-block;
+    background: lime;
+    padding: 0.5em 1em;
+  }
+  input[type="search"]{
+    background: lime;
+    border: 1px solid #666;
+    border-radius: 5px;
+    width: 400px;
+    padding: 5px 10px;
+
+  }
+  .btn-search{}
+    background: lime;
+    border: 1px solid #985754
+    border-radius: 5px;
+    width: 400px;
+    padding: 5px 10px;
+    /* display: block; */
   }
 }
