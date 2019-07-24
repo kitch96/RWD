@@ -146,7 +146,7 @@ input[type="search"]{
   .menu{
     width: 70%;
     height: 100vh;
-    padding: 3em
+    padding: 3em;
     position: fixed;
     top: 0;
     left: 0;
