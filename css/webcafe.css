@@ -193,9 +193,13 @@ input[type="search"]{
     list-style: disc;
     padding-left: 40px;
   }
+  /* 모바일 메인 콘텐츠 레이아웃 */
+  .main{
+    padding: 0 20px;
+  }
 }
 
-/* 데스크탑 레이아웃 */
+/* 데스크탑 스타일 */
 @media screen and (min-width: 1000px){
   /* 데스크탑 레이아웃 */
   .header, .menu{
