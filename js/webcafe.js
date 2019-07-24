@@ -33,9 +33,14 @@ li.on('click keydown', function(e){
    span.removeClass('icon-minus').addClass('icon-plus');
    $(this).find('.menu-item').removeClass('icon-plus').addClass('icon-minus');
    $(this).addClass('menu-act');
+  }else{
+    li.removeClass('menu-act');
   }
 });
-
-
-
+menu.on('focusout', function(){
+  nav.removeClass('is-act');
+});
+menu.on('focusin', function(){
+  nav.addClass('is-act');
+});
 }
