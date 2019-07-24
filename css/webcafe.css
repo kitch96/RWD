@@ -287,4 +287,25 @@ input[type="search"]{
   .sub-menu{
     margin-left: 1.5em;
   }
+  /* 데스크탑 메인 콘텐츠 레이아웃 */
+  .main{
+  background-color: yellow;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-auto-columns: repeat(12, 65px); 
+ }
+ .recommend-book{
+   grid-area: book;
+ }
+ .news{
+   grid-area: news;
+ }
+ .board{
+   grid-area: board;
+ }
+ .favorite-site{
+  grid-area: favorite;
+ }
+ .twiter{
+  grid-area: twiter;
 }
