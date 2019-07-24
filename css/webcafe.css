@@ -44,6 +44,36 @@ input[type="search"]{
 .search-form label, input[type="search"], .btn-search{
   vertical-align: middle;
 }
+/* 공통 반응형 콘텐츠*/
+.rwd-img{
+  max-width: 100%;
+  height: auto;
+}
+/* 공통 메인 콘텐츠 */
+.main-section-heading{
+  background: url('./images/sprite_main.png') no-repeat;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-left: 65px;
+  min-height: 60px;
+  margin: 1rem;
+}
+.en-heading{
+  display: inline;
+}
+.recommend-book-heading {
+  background-position: 0 0;
+}
+.recommend-book-heading .en-heading {
+  color: #abd375;
+}
+.board-heading {
+  background-position: 0 -115px;
+  margin-bottom: 0.5em;
+}
+.board-heading .en-heading {
+  color: #c7b39a;
+}
 /* 모바일 레이아웃 */
 @media screen and (min-width: 320px) and (max-width: 999px){
   .header{
